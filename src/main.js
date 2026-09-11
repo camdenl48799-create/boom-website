@@ -1,0 +1,89 @@
+import './style.css'
+
+const app = document.querySelector('#app')
+
+app.innerHTML = `
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="B.O.O.M. home"><span class="brand-mark">B</span><span>B.O.O.M.</span></a>
+    <nav>
+      <a href="#engine">Engine</a>
+      <a href="#ai">AI</a>
+      <a href="#xr">VR / XR</a>
+      <a href="#cloud">Cloud</a>
+    </nav>
+    <a class="nav-cta" href="#access">Founder Access <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> THE NEXT GENERATION OF GAME DEV</div>
+        <h1>Build<br /><span>Without Limits.</span></h1>
+        <p class="hero-text">B.O.O.M. is an AI-powered game development platform built to help creators turn ideas into playable worlds — from PC to VR and beyond.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#access">Enter B.O.O.M. <span>→</span></a>
+          <a class="button ghost" href="#engine">Explore the vision</a>
+        </div>
+        <div class="hero-note"><span>✦</span> Built for creators. Designed for the future.</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="core"><span>B</span></div>
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="code-card"><span>BOOM_AI</span><b>READY</b><i>●</i></div>
+      </div>
+    </section>
+
+    <section class="marquee"><div>CREATE &nbsp; • &nbsp; BUILD &nbsp; • &nbsp; POLISH &nbsp; • &nbsp; PUBLISH &nbsp; • &nbsp; CREATE &nbsp; • &nbsp; BUILD &nbsp; • &nbsp; POLISH &nbsp; • &nbsp; PUBLISH</div></section>
+
+    <section id="engine" class="content-section section-shell">
+      <div class="section-label">01 / ENGINE</div>
+      <div class="section-heading"><h2>Your ideas.<br /><em>One powerful engine.</em></h2><p>B.O.O.M. brings the core of modern game development into one creator-first workflow.</p></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-icon">⌘</div><h3>Built to Create</h3><p>Build gameplay systems, worlds, interfaces, and tools without fighting your workflow.</p></article>
+        <article class="feature"><div class="feature-icon">⚡</div><h3>AI-Native</h3><p>Use intelligent assistance for code, debugging, design ideas, and development tasks.</p></article>
+        <article class="feature"><div class="feature-icon">◈</div><h3>Creator First</h3><p>A focused experience designed around making games instead of managing endless setup.</p></article>
+      </div>
+    </section>
+
+    <section id="ai" class="ai-section">
+      <div class="section-shell ai-layout">
+        <div><div class="section-label">02 / B.O.O.M. AI</div><h2>Your AI.<br /><em>On your team.</em></h2><p>B.O.O.M. AI is designed to understand game-development context, help solve problems, and turn rough ideas into polished systems.</p><a class="text-link" href="#access">See what AI can build <span>→</span></a></div>
+        <div class="terminal">
+          <div class="terminal-bar"><span></span><span></span><span></span><label>boom_ai / assistant</label></div>
+          <div class="terminal-body"><p><small>YOU</small> Make a multiplayer VR game with cross-play.</p><p class="ai-line"><small>B.O.O.M. AI</small> Architecture mapped. Multiplayer layer initialized.</p><p class="ai-line"><small>B.O.O.M. AI</small> VR input, PC input, networking, and shared gameplay state connected.</p><div class="terminal-cursor">▌</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="xr" class="content-section section-shell">
+      <div class="section-label">03 / VR + XR</div>
+      <div class="section-heading"><h2>Make it once.<br /><em>Play it everywhere.</em></h2><p>Design for immersive platforms while keeping PC players in the same world.</p></div>
+      <div class="xr-card"><div class="xr-glow"></div><div class="xr-copy"><span class="mini-tag">CROSS-PLAY READY</span><h3>PC × VR</h3><p>Build experiences where desktop and VR players can share the same game.</p></div><div class="device"><div class="device-screen"><span>BOOM</span><b>XR</b></div></div></div>
+    </section>
+
+    <section id="cloud" class="cloud-section">
+      <div class="section-shell cloud-layout">
+        <div><div class="section-label">04 / CLOUD PROJECTS</div><h2>Your projects.<br /><em>Wherever you are.</em></h2><p>Keep projects in the cloud so your work isn't trapped on one machine. Pick up where you left off across supported devices.</p></div>
+        <div class="cloud-stack"><div class="cloud-file active"><span>◫</span><div><b>DOG GO!</b><small>VR Multiplayer · Synced</small></div><strong>100%</strong></div><div class="cloud-file"><span>◫</span><div><b>STATIC MAN</b><small>Horror · Synced</small></div><strong>100%</strong></div><div class="cloud-file"><span>◫</span><div><b>NEW PROJECT</b><small>Ready to build</small></div><strong>+</strong></div></div>
+      </div>
+    </section>
+
+    <section class="safety content-section section-shell">
+      <div class="safety-box"><div><div class="section-label">05 / BUILT RESPONSIBLY</div><h2>Powerful tools.<br /><em>Responsible creation.</em></h2></div><p>B.O.O.M. is intended to help creators build great games while keeping safety and responsible development in the workflow.</p></div>
+    </section>
+
+    <section id="access" class="access section-shell">
+      <div class="access-glow"></div>
+      <div class="section-label">FOUNDER ACCESS</div>
+      <h2>The future<br /><em>starts here.</em></h2>
+      <p>B.O.O.M. is being built from the ground up. This is the beginning.</p>
+      <a class="button primary" href="mailto:hello@boom-game.dev">Get in touch <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="footer section-shell"><div class="brand"><span class="brand-mark">B</span><span>B.O.O.M.</span></div><span>BUILD WITHOUT LIMITS.</span><span>© ${new Date().getFullYear()} B.O.O.M.</span></footer>
+`
