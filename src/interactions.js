@@ -1,3 +1,22 @@
+const motionStyle = document.createElement('style')
+motionStyle.textContent = `
+  .nav { transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease; }
+  .nav.scrolled { position: sticky; top: 0; z-index: 20; background: #07090de8; backdrop-filter: blur(16px); border-color: #2a3038; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .cloud-file.reveal:nth-child(2) { transition-delay: .08s; }
+  .cloud-file.reveal:nth-child(3) { transition-delay: .16s; }
+  .feature.reveal:nth-child(2) { transition-delay: .08s; }
+  .feature.reveal:nth-child(3) { transition-delay: .16s; }
+  .terminal.flash { animation: boomFlash .45s ease; }
+  @keyframes boomFlash { 50% { box-shadow: 0 0 55px #8dff6228, 0 30px 90px #0007; transform: translateY(-3px); } }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .marquee div { animation: none; }
+  }
+`
+document.head.appendChild(motionStyle)
+
 const nav = document.querySelector('.nav')
 
 const setNavState = () => {
